@@ -1,0 +1,33 @@
+{
+  "name": "cgsa-template-v2",
+  "version": "0.0.1",
+  "description": "Gluestack V2 Template",
+  "main": "index",
+  "scripts": {
+    "install-all": "npm install --workspaces --if-present",
+    "dev": "npm run dev --workspaces --if-present",
+    "publish": "npm run publish --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gluestack/gluestack-v2.git"
+  },
+  "keywords": [
+    "gluestack",
+    "v2",
+    "fullstack",
+    "framework",
+    "cli",
+    "mobile",
+    "web",
+    "storybook",
+    "shared-components"
+  ],
+  "author": "GeekyAnts.com (https://geekyants.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gluestack/gluestack-v2/issues"
+  },
+  "homepage": "https://github.com/gluestack/gluestack-v2#readme"
+}

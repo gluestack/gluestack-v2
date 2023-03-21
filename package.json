@@ -1,0 +1,22 @@
+{
+  "name": "gluestack-v2",
+  "version": "0.0.1",
+  "description": "Gluestack V2 CLI",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github/gluestack/gluestack-v2"
+  },
+  "keywords": [
+    "gluestack",
+    "v2",
+    "cli",
+    "fullstack",
+    "framework"
+  ],
+  "author": "Faiz A. Farooqui <faizahmedfarooqui>",
+  "license": "MIT"
+}
