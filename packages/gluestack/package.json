@@ -1,8 +1,8 @@
 {
   "name": "gluestack",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gluestack CLI V2",
-  "main": "build/src/index",
+  "main": "build/src/index.js",
   "bin": {
     "gluestack": "./build/src/index.js"
   },

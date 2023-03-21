@@ -4,6 +4,7 @@
  * @author Faiz A. Farooqui <faizahmed.in@gmail.com> (https://faizahmed.in)
  */
 
+import { join } from 'path';
 import { Command } from 'commander';
 import { readdir } from 'fs/promises';
 
@@ -28,14 +29,14 @@ export default class Commander {
   }
 
   public async addCommands () {
-    const files: string[] = await readdir('./src/commands');
+    const files: string[] = await readdir(join(__dirname, '../commands'));
 
     for await (const file of files) {
-      if (!file.endsWith('.ts')) {
+      if (!file.endsWith('.js')) {
         continue;
       }
 
-      const commands = await import('../commands/' + file.replace('.ts', ''));
+      const commands = await import('../commands/' + file.replace('.js', ''));
       commands.default(this.program);
     }
   }

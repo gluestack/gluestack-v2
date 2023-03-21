@@ -47,6 +47,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const path_1 = require("path");
 const commander_1 = require("commander");
 const promises_1 = require("fs/promises");
 const package_json_1 = __importDefault(require("../../package.json"));
@@ -75,17 +76,17 @@ class Commander {
         var _a, e_1, _b, _c;
         return __awaiter(this, void 0, void 0, function* () {
             var _d;
-            const files = yield (0, promises_1.readdir)('./src/commands');
+            const files = yield (0, promises_1.readdir)((0, path_1.join)(__dirname, '../commands'));
             try {
                 for (var _e = true, files_1 = __asyncValues(files), files_1_1; files_1_1 = yield files_1.next(), _a = files_1_1.done, !_a;) {
                     _c = files_1_1.value;
                     _e = false;
                     try {
                         const file = _c;
-                        if (!file.endsWith('.ts')) {
+                        if (!file.endsWith('.js')) {
                             continue;
                         }
-                        const commands = yield (_d = '../commands/' + file.replace('.ts', ''), Promise.resolve().then(() => __importStar(require(_d))));
+                        const commands = yield (_d = '../commands/' + file.replace('.js', ''), Promise.resolve().then(() => __importStar(require(_d))));
                         commands.default(this.program);
                     }
                     finally {
