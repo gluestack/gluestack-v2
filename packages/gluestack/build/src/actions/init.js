@@ -43,7 +43,6 @@ exports.default = (directoryName, template) => __awaiter(void 0, void 0, void 0,
         }
         else {
             yield createApp(directoryName, template);
-            console.log('createApp called..');
         }
     }));
     ;

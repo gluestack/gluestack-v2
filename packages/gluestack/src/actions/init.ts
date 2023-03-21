@@ -34,7 +34,6 @@ export default async (directoryName: string, template: string): Promise<void> =>
         console.log();
       } else {
         await createApp(directoryName, template);
-        console.log('createApp called..');
       }
     });;
 };
