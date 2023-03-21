@@ -142,7 +142,7 @@ const install = async (
 const getTemplateInstallPackage = async (
   template: string, originalDirectory: string
 ): Promise<string> => {
-  let templateToInstall: string = "cgsa-template-v2";
+  let templateToInstall: string = "@gluestack/cgsa-template-v2";
 
   if (template) {
     if (template.match(/^file:/)) {

@@ -113,7 +113,7 @@ const install = (dependencies) => __awaiter(void 0, void 0, void 0, function* ()
     yield (0, execute_1.execute)(command, args, { stdio: 'inherit' });
 });
 const getTemplateInstallPackage = (template, originalDirectory) => __awaiter(void 0, void 0, void 0, function* () {
-    let templateToInstall = "cgsa-template-v2";
+    let templateToInstall = "@gluestack/cgsa-template-v2";
     if (template) {
         if (template.match(/^file:/)) {
             templateToInstall = `file:${(0, path_1.resolve)(originalDirectory, template.match(/^file:(.*)?$/)[1])}`;

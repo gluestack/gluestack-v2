@@ -18,6 +18,6 @@ exports.default = (program) => __awaiter(void 0, void 0, void 0, function* () {
         .command('init')
         .description('installs the gluestack boilerplate')
         .argument('<directory-name>', 'directory name of the boilerplate')
-        .argument('[template]', 'name of the template', 'cgsa-template-v2')
+        .argument('[template]', 'name of the template', '@gluestack/cgsa-template-v2')
         .action(init_1.default);
 });

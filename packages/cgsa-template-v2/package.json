@@ -1,5 +1,5 @@
 {
-  "name": "cgsa-template-v2",
+  "name": "@gluestack/cgsa-template-v2",
   "version": "0.0.1",
   "description": "Gluestack V2 Template",
   "main": "index",
