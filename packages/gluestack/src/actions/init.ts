@@ -10,8 +10,6 @@ import checkVersion from '../helpers/check-version';
 import { execute } from '../helpers/execute';
 
 export default async (directoryName: string, template: string): Promise<void> => {
-  console.log('> here in run..', directoryName, template);
-
   checkVersion()
     .catch(async (): Promise<string> => {
       try {
@@ -181,7 +179,7 @@ const getTemplateInstallPackage = async (
         // Covers templates without the `cgsa-template` prefix:
         // - NAME
         // - @SCOPE/NAME
-        templateToInstall = `${scope}${templateToInstall}-${templateName}${version}`;
+        templateToInstall = `${scope}${templateName}${version}`;
       }
     }
   }

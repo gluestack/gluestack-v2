@@ -22,7 +22,6 @@ const package_json_1 = __importDefault(require("../../package.json"));
 const check_version_1 = __importDefault(require("../helpers/check-version"));
 const execute_1 = require("../helpers/execute");
 exports.default = (directoryName, template) => __awaiter(void 0, void 0, void 0, function* () {
-    console.log('> here in run..', directoryName, template);
     (0, check_version_1.default)()
         .catch(() => __awaiter(void 0, void 0, void 0, function* () {
         try {
@@ -147,7 +146,7 @@ const getTemplateInstallPackage = (template, originalDirectory) => __awaiter(voi
                 // Covers templates without the `cgsa-template` prefix:
                 // - NAME
                 // - @SCOPE/NAME
-                templateToInstall = `${scope}${templateToInstall}-${templateName}${version}`;
+                templateToInstall = `${scope}${templateName}${version}`;
             }
         }
     }
