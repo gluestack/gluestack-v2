@@ -6,7 +6,6 @@
   "scripts": {
     "install-all": "npm install --workspaces --if-present",
     "dev": "npm run dev --workspaces --if-present",
-    "publish": "npm run publish --workspaces --if-present",
     "build": "npm run build --workspaces --if-present"
   },
   "repository": {
