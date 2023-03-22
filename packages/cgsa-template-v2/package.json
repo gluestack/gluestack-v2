@@ -5,8 +5,10 @@
   "main": "index",
   "scripts": {
     "install-all": "npm install --workspaces --if-present",
-    "dev": "npm run dev --workspaces --if-present",
-    "build": "npm run build --workspaces --if-present"
+    "build": "npm run build --workspaces --if-present",
+    "dev": "./glue",
+    "cli": "node ./packages/cli/build/src/glue",
+    "lint": "npm run lint --workspaces --if-present"
   },
   "repository": {
     "type": "git",
@@ -28,5 +30,21 @@
   "bugs": {
     "url": "https://github.com/gluestack/gluestack-v2/issues"
   },
-  "homepage": "https://github.com/gluestack/gluestack-v2#readme"
+  "homepage": "https://github.com/gluestack/gluestack-v2#readme",
+  "devDependencies": {
+    "@types/node": "^18.15.5",
+    "copyfiles": "^2.4.1"
+  },
+  "workspaces": [
+    "packages/**/*",
+    "backend/engine",
+    "backend/services/tenant",
+    "backend/services/landlord"
+  ],
+  "dependencies": {
+    "@gluestack/glue-plugin-backend-engine": "^0.0.51",
+    "@gluestack/glue-plugin-engine": "^0.0.94",
+    "@gluestack/glue-plugin-postgres": "^0.0.27",
+    "@gluestack/glue-plugin-service-node": "^0.0.21"
+  }
 }

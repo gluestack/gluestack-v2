@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+// const helloWorld = require('hello-world');
+// const { run } = require('glue-cli');
+
+// console.log('> hello-world:', helloWorld.default());
+
+// run('node build/index run:service website -p docker --ports 9001:3000');
+
+require('glue-cli')([]);
