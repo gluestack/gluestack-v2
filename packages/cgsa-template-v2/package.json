@@ -36,15 +36,7 @@
     "copyfiles": "^2.4.1"
   },
   "workspaces": [
-    "packages/**/*",
-    "backend/engine",
-    "backend/services/tenant",
-    "backend/services/landlord"
+    "packages/**/*"
   ],
-  "dependencies": {
-    "@gluestack/glue-plugin-backend-engine": "^0.0.51",
-    "@gluestack/glue-plugin-engine": "^0.0.94",
-    "@gluestack/glue-plugin-postgres": "^0.0.27",
-    "@gluestack/glue-plugin-service-node": "^0.0.21"
-  }
+  "dependencies": {}
 }
