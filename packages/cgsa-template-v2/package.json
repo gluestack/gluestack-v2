@@ -1,6 +1,6 @@
 {
   "name": "@gluestack/cgsa-template-v2",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gluestack V2 Template",
   "main": "index",
   "scripts": {
